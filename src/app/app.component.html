@@ -1,8 +1,23 @@
-<h1>{{ title }}</h1>
-<nav>
-  <a class="button" routerLink="/product-list" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Product List</a> |
-  <a class="button" routerLink="/product-add" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Add Product</a>
-  <a class="button" routerLink="/product-edit" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Edit Product</a>
-  <a class="button" routerLink="/product-delete" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Delete Product</a>
-</nav>
-<router-outlet></router-outlet>
+<section id="sectionPrincipal">
+    <section id="sectionSecundaria" >
+        <h1>{{ title }}</h1>
+        <br>
+        <hr>
+        <br>
+        <nav>
+            <a class="btn btn-outline-primary button" routerLink="/product-list" routerLinkActive="activebutton"
+                ariaCurrentWhenActive="page">Product List</a>
+            <a class="btn btn-outline-primary button" routerLink="/product-add" routerLinkActive="activebutton"
+                ariaCurrentWhenActive="page">Add Product</a>
+            <a class="btn btn-outline-primary button" routerLink="/product-edit" routerLinkActive="activebutton"
+                ariaCurrentWhenActive="page">Edit Product</a>
+            <a class="btn btn-outline-primary button" routerLink="/product-delete" routerLinkActive="activebutton"
+                ariaCurrentWhenActive="page">Delete Product</a>
+        </nav>
+        <br>
+        <hr>
+        <br>
+        <router-outlet></router-outlet>
+        </section>
+    
+</section>

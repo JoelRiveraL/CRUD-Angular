@@ -12,5 +12,4 @@ export const routes: Routes = [
     { path: 'product-delete/:id', component: ProductDeleteComponent },
     { path: '', redirectTo: '/product-list', pathMatch: 'full' },
     { path: '**', component: PageNotFoundComponent }
-
 ];

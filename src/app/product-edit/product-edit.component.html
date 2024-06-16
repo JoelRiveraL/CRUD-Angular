@@ -1,8 +1,21 @@
-<h2>Edit Product</h2>
-<form (ngSubmit)="updateProduct()">
-    <label for="name">Name</label>
-    <input id="name" [(ngModel)]="product.name" name="name" required>
-    <label for="price">Price</label>
-    <input id="price" [(ngModel)]="product.price" name="price" required>
-    <button type="submit">Update</button>
-</form>
+<h2>Editar Producto</h2>
+<section class="formsAD">
+    <form (ngSubmit)="updateProduct()" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" [(ngModel)]="product.name" name="name" class="form-control" required>
+            <div class="invalid-feedback">
+                Please provide a name.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input id="price" [(ngModel)]="product.price" name="price" class="form-control" required>
+            <div class="invalid-feedback">
+                Please provide a price.
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Aceptar</button>
+    </form>
+    <br>
+</section>

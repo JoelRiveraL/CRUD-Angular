@@ -1,11 +1,13 @@
-<h2>Delete Product</h2>
-
-<div *ngIf="product">
-    <p>Are you sure you want to delete the product "{{ product.name }}"?</p>
-    <button (click)="deleteProduct()">Yes, Delete</button>
-    <button (click)="cancel()">Cancel</button>
-</div>
-
-<div *ngIf="!product">
-    <p>Loading...</p>
+<div class="container">
+    <div class="delete-product-container mt-5">
+        <h2>Eliminar Producto</h2>
+        <div *ngIf="product">
+            <p>¿Estás seguro de que deseas eliminar el producto "{{ product.name }}"?</p>
+            <button class="btn btn-danger" (click)="deleteProduct()">Sí, Eliminar</button>
+            <button class="btn btn-secondary" (click)="cancel()">Cancelar</button>
+        </div>
+        <div *ngIf="!product">
+            <p>Cargando...</p>
+        </div>
+    </div>
 </div>
